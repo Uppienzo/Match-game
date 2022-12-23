@@ -1,0 +1,130 @@
+body {
+  margin: 0px;
+  background-color: black;
+  max-height: 200vh;
+}
+
+.container {
+  width: 65%;
+  min-height: 100vh;
+  height: 100%;
+  max-height: 200vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  margin: 0px auto;
+  font-family: roboto;
+}
+.game-container {
+  width: 60%;
+  height: 85%;
+  margin: 0px auto;
+  padding: 30px 0px 0px 0px;
+}
+
+.main-image {
+  width: 100%;
+}
+.tab-item {
+  color: silver;
+}
+
+.tab-section {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.tab-button {
+  color: silver;
+  width: 80px;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  border-width: 0px;
+  padding: 10px 5px;
+  margin: 0px 15px;
+  outline: none;
+  cursor: pointer;
+}
+.highlight {
+  border-bottom: 2px solid #fec653;
+  color: #fec653;
+}
+.thumbnails-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.score-card-container {
+  margin: 20px auto 10px;
+  width: 400px;
+  height: 550px;
+
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: roboto;
+}
+.trophy-img {
+  height: 200px;
+}
+.score-card-container * {
+  margin: 0px;
+  margin-top: 3px;
+}
+.score-head {
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.score-marks {
+  color: white;
+}
+.score-card-btn {
+  background-color: #cf60c8;
+  width: 180px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  border-width: 0px;
+  padding: 10px;
+  border-radius: 7px;
+  font-family: roboto;
+  justify-content: space-evenly;
+  color: white;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    min-width: 350px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .game-container {
+    width: 80%;
+  }
+  .trophy-img {
+    height: 150px;
+  }
+  .score-card-container {
+    margin-top: 50px;
+    width: 300px;
+    height: 400px;
+  }
+  .score-card-btn {
+    font-size: 18px;
+    width: 150px;
+  }
+}

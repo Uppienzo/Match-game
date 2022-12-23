@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #2c0e3a;
+  padding: 7px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score-timer-text {
+  width: 190px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-logo {
+  height: 40px;
+}
+.timer-image {
+  height: 20px;
+}
+.score-text {
+  color: white;
+}
+span {
+  color: #fec653;
+  font-size: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 6px;
+  }
+  .website-logo {
+    height: 28px;
+  }
+  span {
+    font-size: 22px;
+  }
+  .timer-image {
+    margin-left: 8px;
+    height: 16px;
+  }
+  .score-timer-text {
+    justify-content: space-evenly;
+  }
+}
